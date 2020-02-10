@@ -27,12 +27,12 @@
      android:layout_height="0px"
      android:layout_weight="1">
 
-      <com.ringdroid.WaveformView
+      <com.ringdroid.view.widget.WaveformView
        android:id="@+id/waveform"
        android:layout_width="fill_parent"
        android:layout_height="fill_parent" />
 
-      <com.ringdroid.MarkerView
+      <com.ringdroid.view.widget.MarkerView
        android:id="@+id/startmarker"
        android:nextFocusDown="@+id/endmarker"
        android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
        android:src="@drawable/marker_left"
        android:contentDescription="@string/start_marker" />
 
-      <com.ringdroid.MarkerView
+      <com.ringdroid.view.widget.MarkerView
        android:id="@+id/endmarker"
        android:nextFocusUp="@+id/startmarker"
        android:nextFocusDown="@+id/info"

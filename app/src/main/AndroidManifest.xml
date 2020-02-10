@@ -24,9 +24,6 @@
           android:versionName="2.7.4"
           android:versionCode="20704">
 
-    <uses-sdk android:minSdkVersion="16"
-              android:targetSdkVersion="25"/>
-
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -43,7 +40,7 @@
 
 
         <!-- Main activity that's launched when the user opens Ringdroid. -->
-        <activity android:name="RingdroidSelectActivity"
+        <activity android:name=".view.activity.RingdroidSelectActivity"
                   android:label="@string/main_activity_label">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,7 +61,7 @@
              Controls viewing the waveform, setting the start and end
              positions, playback, and triggering saving of the output
              file. -->
-        <activity android:name="RingdroidEditActivity"
+        <activity android:name=".view.activity.RingdroidEditActivity"
                   android:configChanges="orientation|screenSize|keyboardHidden"
                   android:windowSoftInputMode="adjustResize"
                   android:hardwareAccelerated="true">
@@ -75,7 +72,7 @@
         </activity>
 
 	<!-- Activity for choosing a contact to assign a ringtone to. -->
-        <activity android:name="ChooseContactActivity"
+        <activity android:name=".view.activity.ChooseContactActivity"
                   android:configChanges="orientation|keyboardHidden">
         </activity>
 
